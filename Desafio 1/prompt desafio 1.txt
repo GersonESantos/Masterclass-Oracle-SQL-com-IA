@@ -1,0 +1,53 @@
+-- Oracle Cloud Free
+https://www.oracle.com/cloud/free/
+
+-- SQLcl
+https://www.oracle.com/database/sqldeveloper/technologies/sqlcl/download/
+
+-- Github schema HR
+https://github.com/oracle-samples/db-sample-schemas/releases/tag/v19.2
+
+
+CREATE USER hr IDENTIFIED BY "Welcome13489!#26";
+
+ALTER USER hr DEFAULT TABLESPACE DATA QUOTA UNLIMITED ON DATA;
+
+ALTER USER hr TEMPORARY TABLESPACE TEMP;
+
+GRANT CREATE SESSION, CREATE VIEW, ALTER SESSION, CREATE SEQUENCE TO hr;
+GRANT CREATE SYNONYM, CREATE DATABASE LINK, RESOURCE , UNLIMITED TABLESPACE TO hr;
+
+GRANT execute ON sys.dbms_stats TO hr;
+
+-- default tablespace DATA
+-- temporary tablespace TEMP
+
+
+ALTER SESSION SET CURRENT_SCHEMA = HR;
+
+db-sample-schemas-19.2\human_resources\hr_cre.sql (for creating the objects)
+db-sample-schemas-19.2\human_resources\hr_popul.sql (for populating the tables)
+db-sample-schemas-19.2\human_resources\hr_idx.sql (for creating the indexes)
+db-sample-schemas-19.2\human_resources\hr_code.sql (for creating the procedures)
+db-sample-schemas-19.2\human_resources\hr_comnt.sql (for creating the comments)
+db-sample-schemas-19.2\human_resources\hr_analz.sql (for gathering the schema statistics)
+
+
+
+-- 
+Considere um laboratório de estudos com o schema HR e me de as respostas das questões abaixo.
+
+Coloque as consultas com o nome das tabelas em maiusculo e prefixando o schema HR
+
+1. Listar Funcionários e Seus Departamentos
+Escreva uma consulta que retorne o nome do funcionário (first_name, last_name), o nome do departamento onde ele trabalha e o nome do gerente do departamento.
+
+2. Encontrar Funcionários com Salário Acima da Média
+Escreva uma consulta para listar os funcionários cujo salário seja maior do que a média de salários de todos os funcionários.
+
+3. Mostrar o Histórico de Trabalhos dos Funcionários
+Liste o histórico de trabalhos (table JOB_HISTORY) dos funcionários, mostrando para cada um: nome completo, job_id, data de início e fim das funções anteriores.
+
+4. Contar Quantos Funcionários Existem por Região
+Escreva uma consulta que informe o número de funcionários por região (REGIONS), atravessando as tabelas até associar os funcionários às regiões.
+
