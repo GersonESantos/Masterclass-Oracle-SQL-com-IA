@@ -121,36 +121,36 @@ ALTER SESSION SET NLS_TERRITORY=America;
 -- create tables, sequences and constraint
 --
 
-@__SUB__CWD__/human_resources/hr_cre
+@"C:/Repo2026/Masterclass Oracle SQL com IA/db-sample-schemas-19.2/db-sample-schemas-19.2/human_resources/hr_cre"
 
 -- 
 -- populate tables
 --
 
-@__SUB__CWD__/human_resources/hr_popul
+@"C:/Repo2026/Masterclass Oracle SQL com IA/db-sample-schemas-19.2/db-sample-schemas-19.2/human_resources/hr_popul"
 
 --
 -- create indexes
 --
 
-@__SUB__CWD__/human_resources/hr_idx
+@"C:/Repo2026/Masterclass Oracle SQL com IA/db-sample-schemas-19.2/db-sample-schemas-19.2/human_resources/hr_idx"
 
 --
 -- create procedural objects
 --
 
-@__SUB__CWD__/human_resources/hr_code
+@"C:/Repo2026/Masterclass Oracle SQL com IA/db-sample-schemas-19.2/db-sample-schemas-19.2/human_resources/hr_code"
 
 --
 -- add comments to tables and columns
 --
 
-@__SUB__CWD__/human_resources/hr_comnt
+@"C:/Repo2026/Masterclass Oracle SQL com IA/db-sample-schemas-19.2/db-sample-schemas-19.2/human_resources/hr_comnt"
 
 --
 -- gather schema statistics
 --
 
-@__SUB__CWD__/human_resources/hr_analz
+@"C:/Repo2026/Masterclass Oracle SQL com IA/db-sample-schemas-19.2/db-sample-schemas-19.2/human_resources/hr_analz"
 
 spool off
