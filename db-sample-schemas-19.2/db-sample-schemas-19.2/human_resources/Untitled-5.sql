@@ -1,0 +1,3 @@
+SELECT * 
+FROM hr.employees 
+FETCH FIRST 10 ROWS ONLY;
