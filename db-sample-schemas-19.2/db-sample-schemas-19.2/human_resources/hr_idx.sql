@@ -38,7 +38,7 @@ Rem    MODIFIED   (MM/DD/YY)
 Rem    hyeh        08/29/02 - hyeh_mv_comschema_to_rdbms
 Rem    ahunold     02/20/01 - New header
 Rem    vpatabal    03/02/01 - Removed DROP INDEX statements
-
+ALTER SESSION SET CURRENT_SCHEMA = HR;
 SET FEEDBACK 1
 SET NUMWIDTH 10
 SET LINESIZE 80

@@ -50,7 +50,7 @@ Rem			            departments tables.
 Rem			            Added sequences.	
 Rem			            Removed not null constraint from 
 Rem 			            salary column of the employees table.
-
+ALTER SESSION SET CURRENT_SCHEMA = HR;
 SET FEEDBACK 1
 SET NUMWIDTH 10
 SET LINESIZE 80
